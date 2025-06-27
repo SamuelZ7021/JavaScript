@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle Week 1</title>
+</head>
+<body>
+    <h1>Validaciones</h1>
+    <section class="conteiner">
+        <div class="card">
+            <label for="Name">Name<input type="text" name="Name" id="Name"required placeholder="What is your name"></label>
+            <label for="Old year">Old year <input type="number" name="Old year" id="Year"required placeholder="How old you year?">
+                <div class="output">
+                    <button class="registro" onclick="validacion()">Registrar</button>
+                    <button class="limpiar" onclick="limpiarRegistro()">Limpiar</button>
+                </div>
+                <div class="conteiner-salida">
+                    <div class="salida" id="salidaDeResultado"></div>
+                </div>
+            </label>
+        </div>
+    </section>
+    <!-- <div id="resultado"></div> -->
+    <script src="./Sistema_interactivo.js"></script>
+</body>
+</html>

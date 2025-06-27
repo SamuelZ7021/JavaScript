@@ -1,0 +1,65 @@
+h1{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.conteiner{
+    display: grid;
+    place-content: center;
+}
+.card{
+    border-radius: 1rem;
+    border: 3px solid black;
+    box-shadow: 4px 4px 10px black;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    width: 345px;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+input{
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+button{
+    width: 100px;
+    font-weight: bold;
+    background: mediumaquamarine;
+}
+
+.output{
+    display: flex;
+    padding: 10px;
+}
+
+.registro{
+    margin-right: 10px;
+}
+
+.conteiner-salida{
+    margin-top: 10px;
+    background: gray;
+    border-radius: .3rem;
+}
+
+.salida p{
+    margin: 3% 3%;
+    font-size: 15px;
+}
+
+.salida{
+    display: grid;
+    justify-content: center;
+    margin: 7% 4%;
+}
+

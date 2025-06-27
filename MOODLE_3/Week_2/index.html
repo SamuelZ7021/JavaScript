@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="add-products">
+            <h1>Add New Product</h1>
+            <input type="text" id="productId" placeholder="Product ID">
+            
+            <input type="text" id="productName" placeholder="Product Name">
+
+            <input type="number" id="productPrice" placeholder="Product Price">
+
+            <button id="addProduct">Add Product</button>
+        </div>
+    
+        <div>
+            <h2>Data Management System</h2>
+            <div id="productList"></div>
+            <div id="uniqueProducts"></div>
+            <div id="categories"></div>
+        </div>
+    </div>
+    <script src="./gestion_datos.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscador de Clima</title>
+    <link rel="stylesheet" href="style-A.css">
+</head>
+<body>
+    <section class="box-formulario">
+        <div class="registro">
+            <div class="Campos">
+                <h1>Busca la ciudad para ver el clima</h1>
+                <div class="Registro-Campo">
+                    <div class="Nombres">
+                        <input type="text" name="Name" id="city-input" required placeholder="Ingrese una ciudad">
+                    </div>
+                    <div class="enviar">
+                        <input type="submit" onkeydown="checkEnter(event)" value="Send" class="bottom" onclick="getWeather()">
+                        <div id="result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<script src="./API.js"></script>
