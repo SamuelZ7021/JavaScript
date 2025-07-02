@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "nombre": "Mouse",
+      "price": 500
+    },
+    {
+      "id": "3",
+      "nombre": "Mouse Pad",
+      "price": 3000
+    },
+    {
+      "id": "4",
+      "nombre": "cincos",
+      "price": 35000
+    },
+    {
+      "id": "5dea",
+      "nombre": "leche",
+      "price": 1000
+    }
+  ]
+}

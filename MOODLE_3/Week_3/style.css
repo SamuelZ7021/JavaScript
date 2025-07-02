@@ -1,0 +1,30 @@
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h3 {
+    margin: 0 0 10px;
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+#product, #update-form {
+    margin: 20px;
+}
+
+input, button {
+    margin: 5px;
+}

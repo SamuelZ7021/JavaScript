@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Data System: Add, Delete, Update</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="product-container"></div>
+
+<div id="product">
+    <h2>Add Product</h2>
+    <input type="text" id="nombre" placeholder="Nombre del producto"/>
+
+    <input type="number" id="price" placeholder="Precio"/>
+
+    <button id="addProduct">Add Product</button>
+</div>
+
+    <hr />
+
+<button id="btn-toggle-update">Mostrar/Ocultar Formulario de Actualización</button>
+
+<div id="update-form" style="display: none;">
+    <h2>Update Product</h2>
+        <input type="text" id="update-nombre" placeholder="Nombre del producto a actualizar"/>
+
+        <input type="text" id="nuevo-nombre" placeholder="Nuevo nombre"/>
+
+        <input type="number" id="update-price" placeholder="Nuevo precio"/>
+
+        <button id="btn-update">Update Product</button>
+
+        <button id="btn-cancel-update">Cancelar</button>
+</div>
+
+    <hr />
+
+<div>
+    <h2>Delete Product</h2>
+    <input type="text" id="delete-nombre" placeholder="Nombre del producto a eliminar"/>
+
+    <button id="btn-delete">Delete Product</button>
+</div>
+
+<script src="./gestion_data.js"></script>
+</body>
+</html>
+
