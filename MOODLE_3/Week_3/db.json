@@ -19,6 +19,31 @@
       "id": "5dea",
       "nombre": "leche",
       "price": 1000
+    },
+    {
+      "id": "ff80",
+      "nombre": "pechug",
+      "price": 25000
+    },
+    {
+      "id": "88cf",
+      "nombre": "carne",
+      "price": 20000
+    },
+    {
+      "id": "3405",
+      "nombre": "morcilla",
+      "price": 3000
+    },
+    {
+      "id": "a037",
+      "nombre": "lechuga",
+      "price": 9000
+    },
+    {
+      "id": "ca95",
+      "nombre": "hoja",
+      "price": 9000
     }
   ]
 }

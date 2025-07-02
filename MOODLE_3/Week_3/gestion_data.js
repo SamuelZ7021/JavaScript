@@ -1,11 +1,3 @@
-// function validarProduct(product){
-//     if (!product.nombre || typeof product.price !== "number"){
-//         console.error("Datos del producto no válidos.")
-//         return false;
-//     }
-//     return true;
-// }
-
 document.addEventListener('DOMContentLoaded', () => {
     fetchProducts();
 
@@ -45,6 +37,7 @@ function fetchProducts() {
     });
     })
     .catch(error => console.error("Error al obtener productos", error));
+
 }
 
 function createProductCard(product) {
