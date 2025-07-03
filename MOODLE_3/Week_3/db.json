@@ -44,6 +44,11 @@
       "id": "ca95",
       "nombre": "hoja",
       "price": 9000
+    },
+    {
+      "id": "15b9",
+      "nombre": "aguardiente",
+      "price": 30000
     }
   ]
 }
