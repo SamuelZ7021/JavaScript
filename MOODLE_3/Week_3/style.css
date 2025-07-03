@@ -52,6 +52,7 @@ body {
 
 /* Formularios */
 #product, #update-form, div > h2 + input, div > button {
+    margin-top:20px ;
     width: 100%;
     max-width: 400px;
     margin: 0 auto 1rem auto;
@@ -86,6 +87,10 @@ button {
 
 button:hover {
     background-color: #bbb;
+}
+
+#btn-update{
+    margin-top: 20px;
 }
 
 /* Separador visual */
