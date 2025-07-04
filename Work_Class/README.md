@@ -6,7 +6,11 @@ Este proyecto es un ejemplo básico de una **Single Page Application (SPA)** uti
 
 ## 📌 ¿Qué es el Hash Routing?
 
-El **Hash Routing** es una técnica común en aplicaciones web de una sola página que permite cambiar de vista sin necesidad de realizar una petición al servidor. Funciona utilizando la parte del *hash* en la URL (es decir, todo lo que está después del símbolo `#`). Esta parte no se envía al servidor, por lo que JavaScript puede usarla para mostrar diferentes secciones de la aplicación.
+El **Hash Routing** es una técnica de enrutamiento en el desarrollo web que permite controlar la navegación dentro de una aplicación de una sola página (*Single Page Application*) utilizando la porción del URL que sigue al símbolo `#` (conocido como *hash*). Esta técnica evita que el navegador recargue toda la página, permitiendo que JavaScript maneje internamente los cambios de vista.
+
+Cuando se cambia el valor del hash (por ejemplo, de `#/inicio` a `#/acerca`), el navegador no realiza una nueva petición al servidor. En su lugar, se activa un evento (`hashchange`) que puede ser capturado por el código JavaScript para actualizar el contenido dinámicamente según la ruta definida.
+
+Esta es una solución simple y efectiva cuando no se desea o no se puede configurar un servidor para gestionar rutas personalizadas.
 
 Ejemplo de URL:
 
