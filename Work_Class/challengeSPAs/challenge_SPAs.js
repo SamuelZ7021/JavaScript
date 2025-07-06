@@ -42,7 +42,7 @@ function renderizarTablaUsuarios() {
     fetch(apiUrl)
         .then(res => res.json())
         .then(data => {
-        const tbody = document.getElementById('usersTableBody');
+        const userT = document.getElementById('usersTableBody');
         data.forEach(user => {
             const row = document.createElement('tr');
             row.innerHTML = `
@@ -69,7 +69,7 @@ function renderizarTablaUsuarios() {
             actionsCell.appendChild(editBtn);
             actionsCell.appendChild(deleteBtn);
 
-            tbody.appendChild(row);
+            userT.appendChild(row);
         });
     });
 };
