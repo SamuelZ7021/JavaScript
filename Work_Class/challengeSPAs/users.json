@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Juan Pérez",
+      "email": "juan.perez@ejemplo.com",
+      "phone": "1234567890",
+      "enrollNumber": "12345678901234",
+      "dateOfAdmission": "2021-12-08"
+    },
+    {
+      "id": 2,
+      "name": "Ana Gómez",
+      "email": "ana.gomez@ejemplo.com",
+      "phone": "9876543210",
+      "enrollNumber": "56789012345678",
+      "dateOfAdmission": "2022-01-15"
+    },
+    {
+      "id": 3,
+      "name": "Juan Pérez",
+      "email": "juan.perez@ejemplo.com",
+      "phone": "1234567890",
+      "enrollNumber": "12345678901234",
+      "dateOfAdmission": "2021-12-08"
+    },
+    {
+      "id": 4,
+      "name": "Ana Gómez",
+      "email": "ana.gomez@ejemplo.com",
+      "phone": "9876543210",
+      "enrollNumber": "56789012345678",
+      "dateOfAdmission": "2022-01-15"
+    },
+    {
+      "id": 5,
+      "name": "Juan Pérez",
+      "email": "juan.perez@ejemplo.com",
+      "phone": "1234567890",
+      "enrollNumber": "12345678901234",
+      "dateOfAdmission": "2021-12-08"
+    },
+    {
+      "id": 6,
+      "name": "Ana Gómez",
+      "email": "ana.gomez@ejemplo.com",
+      "phone": "9876543210",
+      "enrollNumber": "56789012345678",
+      "dateOfAdmission": "2022-01-15"
+    }
+  ]
+}
