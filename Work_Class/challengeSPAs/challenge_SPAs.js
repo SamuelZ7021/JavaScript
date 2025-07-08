@@ -2,8 +2,7 @@ const apiUrl = 'http://localhost:3000/users';
 
 const viewContainer = document.getElementById('view-container');
 
-window.addEventListener('hashchange', cargarVista);
-window.addEventListener('load', cargarVista);
+
 
 function cargarVista() {
     const hash = location.hash.slice(1);
@@ -20,6 +19,8 @@ function cargarVista() {
         location.hash = 'usuarios';
     }
 };
+window.addEventListener('hashchange', cargarVista);
+window.addEventListener('load', cargarVista);
 
 function renderizarTablaUsuarios() {
     const tabla = document.createElement('table');
