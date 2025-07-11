@@ -21,12 +21,6 @@
   ],
   "products": [
     {
-      "id": "1",
-      "nombre": "Laptop",
-      "precio": 3500,
-      "categoria": "Tecnología"
-    },
-    {
       "id": 3,
       "nombre": "PlayStation 5",
       "precio": 1700000,
