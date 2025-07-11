@@ -135,11 +135,3 @@ eliminarDeListaLocalPorId(clave, id)
   ]
 }
 ```
-
----
-
-## 📬 Autor
-
-Este proyecto fue desarrollado paso a paso como ejercicio de aprendizaje en programación web.
-
----
