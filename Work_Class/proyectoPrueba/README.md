@@ -34,7 +34,7 @@ Este proyecto es una aplicación web de una sola página (SPA) construida con HT
 ├── index.html
 ├── app.js
 ├── styles.css
-├── db.json
+├── users.json
 ├── /views
 │   ├── login.js
 │   ├── registro.js
@@ -44,7 +44,6 @@ Este proyecto es una aplicación web de una sola página (SPA) construida con HT
 └── /utils
     ├── auth.js
     ├── storage.js
-    └── api.js
 ```
 
 ---
@@ -61,7 +60,7 @@ Este proyecto es una aplicación web de una sola página (SPA) construida con HT
 3. Inicia el servidor con:
 
    ```bash
-   json-server --watch db.json --port 5000
+   json-server --watch db.json --port 3000
    ```
 
 4. Abre `index.html` en tu navegador (por ejemplo, con Live Server en VSCode).
