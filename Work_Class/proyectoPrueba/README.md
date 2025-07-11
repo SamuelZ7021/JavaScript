@@ -119,13 +119,13 @@ eliminarDeListaLocalPorId(clave, id)
 
 ---
 
-## 📦 Base de datos local (`db.json`)
+## 📦 Base de datos local (`users.json`)
 
 ```json
 {
   "users": [
-    { "id": 1, "username": "admin", "password": "admin", "role": "admin" },
-    { "id": 2, "username": "cliente", "password": "1234", "role": "cliente" }
+    { "id": 1, "username": "Samuel", "password": "1234admin", "role": "admin" },
+    { "id": 2, "username": "Laura", "password": "1234", "role": "cliente" }
   ],
   "products": [],
   "categories": [

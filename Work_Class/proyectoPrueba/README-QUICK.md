@@ -12,10 +12,10 @@ Esta guía rápida te ayuda a ejecutar y probar la aplicación SPA basada en rol
 npm install -g json-server
 ```
 
-2. **Inicia JSON Server** (en la carpeta donde está `db.json`):
+2. **Inicia JSON Server** (en la carpeta donde está `users.json`):
 
 ```bash
-json-server --watch db.json --port 5000
+json-server --watch users.json --port 3000
 ```
 
 3. **Abre el archivo `index.html`** en tu navegador (usa Live Server o doble clic).
@@ -25,11 +25,11 @@ json-server --watch db.json --port 5000
 ## 🔑 Cuentas de prueba
 
 - **Admin**  
-  Usuario: `admin`  
-  Contraseña: `admin`
+  Usuario: `Samuel`  
+  Contraseña: `1234admin`
 
 - **Cliente**  
-  Usuario: `cliente`  
+  Usuario: `Laura`  
   Contraseña: `1234`
 
 ---
