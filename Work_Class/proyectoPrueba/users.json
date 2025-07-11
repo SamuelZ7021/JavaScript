@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "Samuel",
+      "password": "1234admin",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "username": "Laura",
+      "password": 1234,
+      "role": "cliente"
+    },
+    {
+      "id": "ee52",
+      "username": "juan",
+      "password": "39358587",
+      "role": "cliente"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "nombre": "Laptop",
+      "precio": 3500,
+      "categoria": "Tecnología"
+    },
+    {
+      "id": 3,
+      "nombre": "PlayStation 5",
+      "precio": 1700000,
+      "categoria": "Tecnología"
+    },
+    {
+      "id": "7fa9",
+      "nombre": "Cortinas",
+      "precio": 5000,
+      "categoria": "Hogar"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "nombre": "Tecnología"
+    },
+    {
+      "id": "2",
+      "nombre": "Ropa"
+    },
+    {
+      "id": "3",
+      "nombre": "Hogar"
+    },
+    {
+      "id": "4",
+      "nombre": "Deportes"
+    }
+  ]
+}
