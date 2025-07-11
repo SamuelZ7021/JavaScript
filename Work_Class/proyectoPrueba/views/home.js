@@ -28,7 +28,7 @@ export function mostrarVistaHome() {
   } else if (usuario.role === 'cliente') {
     contenido += `
       <p>Gracias por iniciar sesión. Puedes ver el catálogo de productos a continuación:</p>
-      <a href="#productos-cliente">Ver productos</a>
+      <a href="#productos-cliente">Catalogo</a>
     `;
   }
 
