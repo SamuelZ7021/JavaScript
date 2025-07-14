@@ -1,0 +1,22 @@
+# 🔒 Carpetas a ignorar
+node_modules/
+dist/
+
+# 🛑 Archivos innecesarios para Git
+package-lock.json
+.DS_Store
+Thumbs.db
+
+# ⚙️ Configuración local (opcional)
+.vscode/
+.idea/
+
+# 🌍 Variables de entorno
+.env
+.env.*
+
+# 🧹 Archivos temporales y logs
+.log
+.tmp
+.temp
+.swp

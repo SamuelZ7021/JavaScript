@@ -33,22 +33,16 @@
   ],
   "products": [
     {
-      "id": "7fa9",
-      "nombre": "Cortinas",
-      "precio": 5000,
-      "categoria": "Hogar"
-    },
-    {
-      "id": "d51c",
-      "nombre": "Audifonos",
-      "precio": -1000,
-      "categoria": "Tecnología"
-    },
-    {
+      "id": "7ff5",
       "nombre": "Coca-cola",
-      "precio": 5000,
-      "categoria": "Comida",
-      "id": "7a41"
+      "precio": 2000,
+      "categoria": "Comida"
+    },
+    {
+      "id": "e11e",
+      "nombre": "Laptop",
+      "precio": "100000",
+      "categoria": "Tecnología"
     }
   ],
   "categories": [

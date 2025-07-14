@@ -1,6 +1,7 @@
 // views/registro.js
 
 import { agregarAListaLocal } from '../utils/storage.js';
+import { validarRegistro, respuestaOk } from '../utils/validation.js';
 
 export function mostrarVistaRegistro() {
   const app = document.getElementById('app');
@@ -25,17 +26,18 @@ export function mostrarVistaRegistro() {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const username = form.username.value;
-    const password = form.password.value;
+    const username = form.username.value.trim();
+    const password = form.password.value.trim();
     const role = form.role.value;
 
-    if (!username || !password || !role) {
-      document.getElementById('mensaje-registro').textContent = 'Todos los campos son obligatorios.';
+    const nuevoUsuario = { username, password, role };
+
+    if (!validarRegistro(nuevoUsuario)) {
+      document.getElementById('mensaje-registro').textContent = 'Por favor completa todos los campos correctamente.';
       return;
     }
 
     try {
-      // Verificar si el usuario ya existe
       const resCheck = await fetch(`http://localhost:3000/users?username=${username}`);
       const usuarios = await resCheck.json();
 
@@ -44,24 +46,23 @@ export function mostrarVistaRegistro() {
         return;
       }
 
-      const nuevoUsuario = { username, password, role };
-
-      // Guardar en JSON Server
       const res = await fetch('http://localhost:3000/users', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(nuevoUsuario)
       });
 
-      const usuarioGuardado = await res.json();
+      if (respuestaOk(res)) {
+        const usuarioGuardado = await res.json();
+        agregarAListaLocal('usuarios', usuarioGuardado);
+        alert('Usuario registrado con éxito.');
+        location.hash = 'login';
+      } else {
+        document.getElementById('mensaje-registro').textContent = 'Error al registrar. Intenta más tarde.';
+      }
 
-      // Guardar también en localStorage
-      agregarAListaLocal('usuarios', usuarioGuardado);
-
-      alert('Usuario registrado con éxito.');
-      location.hash = 'login';
     } catch (error) {
-      document.getElementById('mensaje-registro').textContent = 'Error al registrar. Intenta más tarde.';
+      document.getElementById('mensaje-registro').textContent = 'Error inesperado en el registro.';
     }
   });
 }

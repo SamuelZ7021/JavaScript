@@ -4,14 +4,23 @@ import { obtenerUsuarioActivo, cerrarSesion } from '../utils/auth.js';
 
 export function mostrarVistaHome() {
   const usuario = obtenerUsuarioActivo();
+  const app = document.getElementById('app');
 
-  // Si no hay usuario logueado, redirige al login
+    // Si no hay sesión activa, mostrar info general
   if (!usuario) {
-    location.hash = 'login';
+    location.hash = 'home'
+    app.innerHTML = `
+      <h2>Bienvenido a nuestra tienda de productos</h2>
+      <p>En esta tienda puedes ver productos de tu interes</p>
+      <ul>
+        <li>Registrarte como cliente</li>
+        <li>Iniciar sesión y ver contenido</li>
+        <li>Los clientes pueden ver el catálogo disponible</li>
+      </ul>
+      <p>Para continuar, por favor <a href="#login">inicia sesión</a> o <a href="#registro">regístrate</a>.</p>
+    `;
     return;
   }
-
-  const app = document.getElementById('app');
 
   // Contenido base
   let contenido = `

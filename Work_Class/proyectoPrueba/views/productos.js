@@ -2,6 +2,7 @@
 
 import { obtenerUsuarioActivo } from '../utils/auth.js';
 import { agregarAListaLocal, eliminarDeListaLocalPorId } from '../utils/storage.js';
+import { validarProducto, mostrarErrorSi, respuestaOk } from '../utils/validation.js';
 
 export async function mostrarVistaProductos() {
   const app = document.getElementById('app');
@@ -61,33 +62,40 @@ export async function mostrarVistaProductos() {
     e.preventDefault();
 
     const nombre = form.nombre.value;
-    const precio = parseFloat(form.precio.value);
+    const precio = form.precio.value;
     const categoria = form.categoria.value;
 
-    if (!modoEdicion) {
-      const nuevoProducto = { nombre, precio, categoria };
+    const producto = { nombre, precio, categoria };
 
+    if (!validarProducto(producto)) {
+      alert('Por favor completa todos los campos correctamente.');
+      return;
+    }
+
+    if (!modoEdicion) {
       const res = await fetch('http://localhost:3000/products', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(nuevoProducto)
+        body: JSON.stringify(producto)
       });
 
-      const productoCreado = await res.json();
-      agregarAListaLocal('productos', productoCreado);
+      if (respuestaOk(res)) {
+        const productoCreado = await res.json();
+        agregarAListaLocal('productos', productoCreado);
+      }
 
     } else {
-      const productoActualizado = { nombre, precio, categoria };
-
-      await fetch(`http://localhost:3000/products/${productoEditarId}`, {
+      const res = await fetch(`http://localhost:3000/products/${productoEditarId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(productoActualizado)
+        body: JSON.stringify(producto)
       });
 
-      modoEdicion = false;
-      productoEditarId = null;
-      if (btnFormulario) btnFormulario.textContent = 'Agregar';
+      if (respuestaOk(res)) {
+        modoEdicion = false;
+        productoEditarId = null;
+        if (btnFormulario) btnFormulario.textContent = 'Agregar';
+      }
     }
 
     form.reset();
@@ -96,10 +104,14 @@ export async function mostrarVistaProductos() {
 
   document.querySelectorAll('.eliminar').forEach(btn => {
     btn.addEventListener('click', async () => {
-      const id = Number(btn.dataset.id);
-      await fetch(`http://localhost:3000/products/${id}`, { method: 'DELETE' });
-      eliminarDeListaLocalPorId('productos', id);
-      mostrarVistaProductos();
+      const id = btn.dataset.id;
+      const res = await fetch(`http://localhost:3000/products/${id}`, { method: 'DELETE' });
+      if (respuestaOk(res)) {
+        eliminarDeListaLocalPorId('productos', id);
+        mostrarVistaProductos();
+      } else {
+        alert('Error al eliminar el producto.');
+      }
     });
   });
 
@@ -108,7 +120,7 @@ export async function mostrarVistaProductos() {
       const id = btn.dataset.id;
       const res = await fetch(`http://localhost:3000/products/${id}`);
 
-      if (!res.ok) {
+      if (!respuestaOk(res)) {
         alert('Error: el producto no existe.');
         return;
       }
