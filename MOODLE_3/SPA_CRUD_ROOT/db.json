@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "1234admin",
+      "role": "admin",
+      "id": "fcfe"
+    },
+    {
+      "username": "visitante",
+      "password": 1234,
+      "role": "cliente",
+      "id": "45a9"
+    },
+    {
+      "id": "e096",
+      "username": "Samuel",
+      "password": "1234hola",
+      "role": "cliente"
+    },
+    {
+      "id": "e993",
+      "username": "hola",
+      "password": "hola5",
+      "role": "admin"
+    }
+  ],
+  "event": [
+    {
+      "nombre": "Dj vsisitante",
+      "descripcion": "Fista para adultos",
+      "cupo": 200,
+      "fecha": "2025-12-07",
+      "id": "b3a0"
+    },
+    {
+      "id": "06b6",
+      "nombre": "Bingo",
+      "descripcion": "bingo",
+      "cupo": 30,
+      "fecha": "2025-07-14"
+    }
+  ],
+  "inscripciones": [
+    {
+      "id": "1",
+      "userId": 2,
+      "eventId": 1
+    }
+  ]
+}
