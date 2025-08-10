@@ -1,4 +1,3 @@
-### Samuel andrey zapata casas
 # 📦 CRUD de Productos con Node.js, MySQL y DBeaver
 
 Este proyecto implementa un sistema CRUD (Crear, Leer, Actualizar y Eliminar) para la gestión de productos, desarrollado con **Node.js**, **Express** y **MySQL**. Se utiliza **DBeaver** como cliente de base de datos y se incluye soporte para **subida de archivos CSV** para registrar productos de forma masiva.
