@@ -1,0 +1,16 @@
+PAGINA 1:
+https://dinahosting.com/blog/entendiendo-la-base-del-desarrollo-web-html-css-y-javascript/
+
+
+
+primero partimos por lo procipal que es el HTML. ***¿que es el lenjuage HTML?***/ es un lenjuage para crear toda la estructura y contenido basico de lo que vas a ver en una pagina web. Pr ejemplo: El titulo de la pagina web, la URL de la misma pagina para compartirla, los titulos dentro de la pagina y todo el contexto que ves en la pagina. 
+
+*sintaxis basica de html:* DOCTYPE html: tipo de documento que es y la version de html que se esta utilizando.
+html: Es el elemento o la raiz para que pueda funcionar en la pagina web y dentro de este elemto puedes coocar todo el contenido que vas a utilizar.
+head: es la etiqueta que contiene metadatos, como los titulos de la pagina, los enlaces de las hojas de estilo CSS y los scripts JavaScript.
+body: Este acabarca todo el tipo de contexto o de texto de la pagina, imagenes y enlaces.
+(TODOS ESTOS EJEMPLOS TIENE QUE ESTAR DENTRO DE UNOS (<>), PARA CERRAR UN ETIQUETA TINES QUE COLOCAR (</>)).
+
+**¿Que es CSS?**
+CSS es el lenguaje que se centra en la presentacion y el diseño de tu pagina web, esta permite controlar los aspectos como colores, tipo de letra, el tamaño de los images, el diseño y otros aspectos calves para que tu pagina se vea visualmente presentable.
+

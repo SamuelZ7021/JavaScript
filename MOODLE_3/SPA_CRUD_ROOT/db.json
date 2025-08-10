@@ -23,6 +23,12 @@
       "username": "hola",
       "password": "hola5",
       "role": "admin"
+    },
+    {
+      "id": "92c7",
+      "username": "admin2",
+      "password": "1234admin2",
+      "role": "admin"
     }
   ],
   "event": [
